@@ -6,6 +6,7 @@ import { checkCharacters } from "./validations/checkCharacters";
 import { hasTLD } from "./validations/checkHasTLD";
 import { checkIsIp } from "./validations/checkIsIp";
 import { checkLength } from "./validations/checkLength";
+import { checkPort } from "./validations/checkPorts";
 import { checkProtocols } from "./validations/checkProtocols";
 
 export function parseUrl(urlString: string, userOptions: IOptions) {
@@ -21,6 +22,10 @@ export function parseUrl(urlString: string, userOptions: IOptions) {
         if (!options.allowIp) {
             checkIsIp(urlObject);
             hasTLD(urlObject);
+        }
+
+        if (!options.allowPorts) {
+            checkPort(urlObject);
         }
 
         if (!options.allowBasicAuth) {

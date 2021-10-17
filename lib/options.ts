@@ -7,6 +7,7 @@ const defaultOptions: Required<IOptions> = {
     maxLength: 2048,
     minLength: 5,
     allowBasicAuth: false,
+    allowPorts: false,
 }
 
 export function createOptions(options: IOptions) {

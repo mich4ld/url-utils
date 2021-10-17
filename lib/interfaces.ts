@@ -5,4 +5,5 @@ export interface IOptions {
     maxLength?: number;
     minLength?: number;
     allowBasicAuth?: boolean;
+    allowPorts?: boolean;
 }
