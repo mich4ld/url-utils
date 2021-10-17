@@ -2,6 +2,12 @@
 Simple URL validation library without any dependencies
 
 ### Installation
+#### npm
 ```bash
-npm install @mich4l/url-utils
+npm i @mich4l/url-utils
+```
+
+#### Yarn
+```bash
+yarn add @mich4l/url-utils
 ```
