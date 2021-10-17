@@ -1,6 +1,6 @@
 import { IOptions } from "../interfaces";
 
-const bannedCharacters = ['!', '@', '_', '(', ')', '']
+const bannedCharacters = ['!', '@', '_', '(', ')']
 const bannedCharactersAndIP = [...bannedCharacters, '[', ']']
 
 function checkIsBanned(blacklist: string[], urlPart: string) {
